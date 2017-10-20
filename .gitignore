@@ -1,0 +1,12 @@
+*.csv
+*.rds
+*.pdf
+*.txt
+*.xlsx
+*.db
+*.avi
+.Rhistory
+
+
+
+
