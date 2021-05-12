@@ -140,6 +140,7 @@ pred_GLM <- predict(my_glm_int, data = Boston)
 plot(pred_RF$predictions, pred_GLM)
 abline(0, 1)
 ```
+
 ```{r}
 pred_diff <- pred_RF$predictions - pred_GLM
 
@@ -282,6 +283,7 @@ my_ranger_log_diff2 <- ranger(Ydiff ~ . - medv, data = data.table(Ydiff = pred_d
 my_ranger_log_diff2
 
 ```
+
 ```{r}
 myres_tmp <- ranger::importance(my_ranger_log_diff2)
 myres <- cbind(names(myres_tmp), myres_tmp,  i = 1)
